@@ -9,8 +9,8 @@ import {
 
 import MovieCard from '../components/MovieCard'
 
-// import './Movie.css'
-import './Movietest.css'
+import './Movie.css'
+// import './Movietest.css'
 
 export interface IArrayDetails {
   id: number
@@ -54,7 +54,6 @@ const Movie = () => {
             <div className='movie-img'>
               <MovieCard topFilms={movie}/>
             </div>
-
           <div>
             <div className='description'>
               <h3>
@@ -64,7 +63,7 @@ const Movie = () => {
             </div> 
             <div className='info'>
               <h3>
-                <BsWallet2 /> Orçamento
+                <BsWallet2 /> Orçamento:
               </h3>
               <p>{formatCurrency(movie.budget)}</p>
               <h3>
@@ -74,7 +73,7 @@ const Movie = () => {
               <h3>
                 <BsHourglassSplit /> Duração:
               </h3>
-              <p>{movie.runtime} minutos</p>
+              <p>{movie.runtime} min</p>
             </div>
           </div>
         </>

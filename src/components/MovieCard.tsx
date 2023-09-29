@@ -12,10 +12,10 @@ const MovieCard = ({topFilms, showLink}: Props) => {
   return (
     <div className='movie-card'>
         <img src={`${imageUrl}${topFilms.poster_path}`} alt={topFilms.title} />
-        <h2>{topFilms.title}</h2>
-        <p>
+          <h2>{topFilms.title}</h2>
+          <p>
             <FaStar className='star'/> {topFilms.vote_average}
-        </p>
+          </p>
         {showLink && <Link to={`/movie/${topFilms.id}`}>Detalhes</Link>}
     </div>
   )

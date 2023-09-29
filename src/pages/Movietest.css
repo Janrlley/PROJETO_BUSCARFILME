@@ -1,9 +1,38 @@
 .movie-page {
     display: flex;
+    margin-top: 10px;
+    justify-content: center;
     color: #fff;
-    width: 100%;
-    gap: 50px;
+    gap: 30px;
 }
+
+.movie-page .movie-card img {
+    width: 280px;
+}
+
+.movie-page .movie-card h2 {
+    font-size: 1.2rem;
+}
+
+.movie-card {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* .movie-page img {
+    width: 300px;
+    margin-left: 10px;
+}
+
+.movie-page h2 {
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 1.3rem;
+} */
 
 .description {
     padding-bottom: 10px;
@@ -12,9 +41,11 @@
 
 .info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+}
+
+.info p {
+    margin: 0 20px;
 }
 
 .info h3 {
